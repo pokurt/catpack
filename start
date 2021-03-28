@@ -31,7 +31,7 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "goodcat" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3NhbmR5MTcwOS9jYXR1c2VyYm90" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL2FrYW5lLXRzdW5lbW9yaS9jYXR1c2VyYm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d`
     elif [[ $UPSTREAM_REPO == "badcat" ]]
     then
         rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL0ppc2FuMDkvY2F0dXNlcmJvdA==" | base64 -d`
